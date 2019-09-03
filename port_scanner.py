@@ -13,8 +13,6 @@ t1 = datetime.now()
 host_ip = socket.gethostbyname(host_name)
 print(host_name,'host ip:', host_ip)
 print(70*"-")
-
-
 i = 0
 
 
@@ -38,6 +36,4 @@ try:
     print('Number of open port found:', i)
     print("Results found in:", total_time)
 
-except KeyboardInterrupt:
-    print("You pressed Ctrl+C")
-    sys.exit()
+
