@@ -35,5 +35,8 @@ try:
     total_time = t2 - t1
     print('Number of open port found:', i)
     print("Results found in:", total_time)
+    sock.close()
 
-
+except KeyboardInterrupt:
+    print("You pressed Ctrl+C")
+    sys.exit()
